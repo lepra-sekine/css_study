@@ -9,6 +9,7 @@ body {
 /* View port基準の親ブロック */
 .parent {
     margin: 10px auto;
+    display: flex;
     width: 50vw;
     height: 50vh;
     padding: 0.5rem;
@@ -31,6 +32,15 @@ body {
     margin: 10px auto;
     width: 25vw;
     height: 25vh;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #78ff8e;
+}
+
+/* 可変幅の子ブロック */
+.flex-child {
+    /* width, heightはあえて記述しない。 */
+    margin: 5px;
     padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: #78ff8e;
