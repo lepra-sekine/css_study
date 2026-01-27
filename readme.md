@@ -1,5 +1,7 @@
 # CSS苦手意識をなくす場所
 
+[htmlのプレビュー](https://lepra-sekine.github.io/css_study/html/example_1.html)
+
 ## 本リポジトリで目指すところ
 
 - CSSに苦手意識があるSE, PGに苦手意識をなるべくなくしてもらう。
