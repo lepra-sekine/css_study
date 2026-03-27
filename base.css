@@ -48,7 +48,7 @@ body {
 }
 
 .o-subtitle {
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     font-size: 1rem;
 }
@@ -192,4 +192,64 @@ body {
 
 .accordion-toggle-input:checked~.accordion-content {
     display: block;
+}
+
+/* ヘッダースタイル */
+.o-header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 15px;
+}
+
+.o-header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.o-header__home {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #667eea;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.o-header__home:hover {
+    color: #764ba2;
+}
+
+.o-header__breadcrumb {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.o-header__breadcrumb a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.o-header__breadcrumb a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+.o-header__back-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.o-header__back-link:hover {
+    background-color: #764ba2;
 }
