@@ -1,6 +1,6 @@
 # CSS苦手意識をなくす場所
 
-[実装例プレビュー](https://lepra-sekine.github.io/css_study/html/index.html)
+[実装例プレビュー](https://lepra-sekine.github.io/css_study/index.html)
 
 ## 本リポジトリの目的
 
