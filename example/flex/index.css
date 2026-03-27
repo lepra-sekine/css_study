@@ -1,0 +1,90 @@
+/* 構造（Object） */
+.o-box {
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.o-card {
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.o-flex-parent {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.o-inner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o-block-center {
+    margin: 0 auto;
+}
+
+/* 具体的オブジェクトクラス */
+.parent {
+    margin: 20px auto;
+    display: flex;
+    width: 45vw;
+    height: 50vh;
+    padding: 0.5rem;
+}
+
+.static-parent {
+    margin: 20px auto;
+    width: 320px;
+    height: 320px;
+    padding: 0.5rem;
+}
+
+.child {
+    margin: 10px auto;
+    width: 25vw;
+    height: 25vh;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-child {
+    margin: 5px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.flex-child p {
+    text-align: center;
+}
+
+/* 見た目（Skin） */
+.theme-primary {
+    background-color: #667eea;
+}
+
+.theme-secondary {
+    background-color: #764ba2;
+}
+
+.theme-text-white {
+    color: white;
+}
+
+.theme-hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.theme-hover-lift:hover {
+    transform: translateY(-5px);
+}
