@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../base.css" type="text/css" rel="stylesheet" />
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <script src="../../codeloader.js"></script>
+    <title>CSS苦手意識をなくす場所 - CSSのサイズ指定</title>
+</head>
+
+<body class="skin-page-gradient">
+    <div class="o-container skin-card">
+        <h1 class="o-heading-primary skin-primary-text">CSSのサイズ指定</h1>
+        <p class="o-subtitle skin-muted-text">ブロック要素の中で子要素の幅・高さをどう扱うかを、実例を通じてわかりやすく学べる教材です。</p>
+
+        <!-- 実装例1 -->
+        <div class="o-example-parent skin-example-parent">
+            <div class="o-example-parent__body">
+                親要素に <code>display: flex;</code> を指定すると、子要素がフレックスコンテナ内で横並びになります。子要素に <code>width</code> と
+                <code>height</code> を指定していない場合、フレックスのデフォルト動作に従い、利用可能なスペースを均等に分配します。
+            </div>
+            <div class="accordion-toggle-container">
+                <input type="checkbox" id="toggle-code" class="accordion-toggle-input">
+                <label for="toggle-code" class="accordion-toggle">ソースを見る</label>
+                <pre class="o-example-parent__code skin-example-parent__code accordion-content"
+                    data-code-src="flex_ex_1.txt"></pre>
+            </div>
+        </div>
+
+        <!-- div内部の子divをwidth, heightを指定せずフレックスに表示する場合 -->
+        <div class="parent theme-primary theme-hover-lift o-box">
+            <div class="flex-child theme-secondary theme-text-white o-box">
+                <p>こちらはフレックスな子ブロックです。width, heightは指定していません。</p>
+            </div>
+            <div class="flex-child theme-secondary theme-text-white o-box">
+                <p>こちらはフレックスな子ブロックです。width, heightは指定していません。</p>
+            </div>
+            <div class="flex-child theme-secondary theme-text-white o-box">
+                <p>こちらはフレックスな子ブロックです。width, heightは指定していません。</p>
+            </div>
+        </div>
+
+        <!-- 実装例2 -->
+        <div class="o-example-parent skin-example-parent">
+            <div class="o-example-parent__body">
+                親要素に <code>display: flex;</code> を指定し、子要素に <code>width: 25vw;</code> と <code>height: 25vh;</code>
+                を指定すると、ビューポートサイズに基づいたサイズになります。
+            </div>
+            <div class="accordion-toggle-container">
+                <input type="checkbox" id="toggle-code2" class="accordion-toggle-input">
+                <label for="toggle-code2" class="accordion-toggle">ソースを見る</label>
+                <pre class="o-example-parent__code skin-example-parent__code accordion-content"
+                    data-code-src="flex_ex_2.txt"></pre>
+            </div>
+        </div>
+
+        <!-- div内部の子divをvw, vhでサイズを指定する場合 -->
+        <div class="parent theme-primary theme-hover-lift o-box">
+            <div class="child theme-secondary theme-text-white o-box">
+                子ブロック。
+            </div>
+        </div>
+
+        <!-- 実装例3 -->
+        <div class="o-example-parent skin-example-parent">
+            <div class="o-example-parent__body">
+                親要素に固定サイズ（<code>width: 320px; height: 320px;</code>）を指定し、子要素に <code>width: 25vw;</code> と
+                <code>height: 25vh;</code> を指定すると、ビューポートサイズに基づいたサイズになりますが、親要素のサイズに影響されます。
+            </div>
+            <div class="accordion-toggle-container">
+                <input type="checkbox" id="toggle-code3" class="accordion-toggle-input">
+                <label for="toggle-code3" class="accordion-toggle">ソースを見る</label>
+                <pre class="o-example-parent__code skin-example-parent__code accordion-content"
+                    data-code-src="flex_ex_3.txt"></pre>
+            </div>
+        </div>
+
+        <!-- width, heightが数値で指定されたdivに子divを実装し、vw, vhでサイズを指定する場合 -->
+        <div class="static-parent theme-primary theme-hover-lift o-box">
+            <div class="child theme-secondary theme-text-white o-box">
+                子ブロック。
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

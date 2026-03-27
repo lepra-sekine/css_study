@@ -1,0 +1,30 @@
+&lt;div class="parent theme-primary theme-hover-lift o-box"&gt;
+    &lt;div class="flex-child theme-secondary theme-text-white o-box"&gt;
+        &lt;p&gt;こちらはフレックスな子ブロックです。width, heightは指定していません。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="flex-child theme-secondary theme-text-white o-box"&gt;
+        &lt;p&gt;こちらはフレックスな子ブロックです。width, heightは指定していません。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="flex-child theme-secondary theme-text-white o-box"&gt;
+        &lt;p&gt;こちらはフレックスな子ブロックです。width, heightは指定していません。&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .parent {
+        margin: 20px auto;
+        display: flex;
+        width: 50vw;
+        height: 50vh;
+        padding: 0.5rem;
+    }
+
+    .flex-child {
+        margin: 5px;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+&lt;/style&gt;

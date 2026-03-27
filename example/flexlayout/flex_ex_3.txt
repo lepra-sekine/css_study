@@ -1,0 +1,24 @@
+&lt;div class="static-parent theme-primary theme-hover-lift o-box"&gt;
+    &lt;div class="child theme-secondary theme-text-white o-box"&gt;
+        子ブロック。
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+    .static-parent {
+        margin: 20px auto;
+        width: 320px;
+        height: 320px;
+        padding: 0.5rem;
+    }
+
+    .child {
+        margin: 10px auto;
+        width: 25vw;
+        height: 25vh;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+&lt;/style&gt;
