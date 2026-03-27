@@ -2,6 +2,7 @@
 
 /* リセット */
 h1,
+h2,
 p,
 ul,
 li {
@@ -33,9 +34,17 @@ body {
 /* 見出しのレイアウト（構造）
    - h1 や副題を中央寄せに配置するためのスタイル */
 .o-heading-primary {
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
     font-size: 2rem;
+}
+
+.o-heading-secondary {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-left: #667eea 10px solid;
+    padding: 0.25rem 0 0.25rem 1rem;
 }
 
 .o-subtitle {

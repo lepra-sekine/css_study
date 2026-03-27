@@ -15,6 +15,7 @@
         <p class="o-subtitle skin-muted-text">ブロック要素の中で子要素の幅・高さをどう扱うかを、実例を通じてわかりやすく学べる教材です。</p>
 
         <!-- 実装例1 -->
+        <h2 class="o-heading-secondary skin-primary-text">実装例1: フレックスコンテナ内の子要素のサイズ指定</h2>
         <div class="o-example-parent skin-example-parent">
             <div class="o-example-parent__body">
                 親要素に <code>display: flex;</code> を指定すると、子要素がフレックスコンテナ内で横並びになります。子要素に <code>width</code> と
@@ -42,6 +43,7 @@
         </div>
 
         <!-- 実装例2 -->
+        <h2 class="o-heading-secondary skin-primary-text">実装例2: ビューポート単位を使用したサイズ指定</h2>
         <div class="o-example-parent skin-example-parent">
             <div class="o-example-parent__body">
                 親要素に <code>display: flex;</code> を指定し、子要素に <code>width: 25vw;</code> と <code>height: 25vh;</code>
@@ -63,10 +65,11 @@
         </div>
 
         <!-- 実装例3 -->
+        <h2 class="o-heading-secondary skin-primary-text">実装例3: 固定サイズの親要素内でビューポート単位を使用したサイズ指定</h2>
         <div class="o-example-parent skin-example-parent">
             <div class="o-example-parent__body">
-                親要素に固定サイズ（<code>width: 320px; height: 320px;</code>）を指定し、子要素に <code>width: 25vw;</code> と
-                <code>height: 25vh;</code> を指定すると、ビューポートサイズに基づいたサイズになりますが、親要素のサイズに影響されます。
+                親要素に固定サイズ（<code>width: 320px; height: 320px;</code>）を指定しても、子要素にビューポートに基づくサイズ（<code>width: 25vw; height: 25vh;</code>）を指定すると、
+                子要素はビューポートサイズの25%に基づいてサイズされます。そのため、ビューポートが大きい場合、子要素が親要素をはみ出す可能性があります。
             </div>
             <div class="accordion-toggle-container">
                 <input type="checkbox" id="toggle-code3" class="accordion-toggle-input">
